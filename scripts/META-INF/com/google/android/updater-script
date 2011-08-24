@@ -1,0 +1,30 @@
+set_progress(1.000000);
+
+mount("ext4", "EMMC", "/dev/block/mmcblk0p25", "/system");
+package_extract_dir("resetuv", "/sdcard/resetuv");
+package_extract_dir("system", "/system");
+set_perm(0, 0, 0755, "/system/bin/25uvon");
+set_perm(0, 0, 0755, "/system/bin/50uvon");
+set_perm(0, 0, 0755, "/system/bin/puvon");
+set_perm(0, 0, 0755, "/system/bin/puvxon");
+set_perm(0, 0, 0755, "/system/bin/uuvon");
+set_perm(0, 0, 0755, "/system/bin/uvoff");
+set_perm(0, 0, 0644, "/system/app/LordModUV.apk");
+unmount("/system");
+
+mount("ext3", "EMMC", "/dev/block/mmcblk0p25", "/system");
+package_extract_dir("resetuv", "/sdcard/resetuv");
+package_extract_dir("system", "/system");
+set_perm(0, 0, 0755, "/system/bin/25uvon");
+set_perm(0, 0, 0755, "/system/bin/50uvon");
+set_perm(0, 0, 0755, "/system/bin/puvon");
+set_perm(0, 0, 0755, "/system/bin/puvxon");
+set_perm(0, 0, 0755, "/system/bin/uuvon");
+set_perm(0, 0, 0755, "/system/bin/uvoff");
+set_perm(0, 0, 0644, "/system/app/LordModUV.apk");
+unmount("/system");
+
+ui_print(" ");
+ui_print("Undervolt Scripts Installed + LordModUV.apk");
+ui_print("Done! :D");
+ui_print(" ");
