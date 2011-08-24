@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LordModUV</string>
+    <string-array name="actions_array">
+        <item>25uvon</item>
+        <item>50uvon</item>
+        <item>puvon</item>
+        <item>puvxon</item>
+        <item>uuvon</item>
+        <item>uvoff</item>
+    </string-array>
+    <string-array name="descriptions_array">
+        <item>-25mV Undervolting</item>
+        <item>-50mV Undervolting!</item>
+        <item>Pinky Undervolting</item>
+        <item>Stable Pinky Undervolting</item>
+        <item>Ultra Undervolting</item>
+        <item>Deactivate Undervolting</item>
+    </string-array>    
+</resources>
